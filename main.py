@@ -3,7 +3,7 @@ import sys
 
 from PyQt5.QtWidgets import QApplication
 from view import GUI
-from controller import Controller
+from Controller import Controller
 from  model import evaluateExpression
 
 
