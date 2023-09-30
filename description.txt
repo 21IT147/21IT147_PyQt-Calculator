@@ -1,0 +1,56 @@
+Main.py:
+
+    This code sets up a basic calculator application using PyQt5. 
+
+    It initializes a graphical user interface (GUI) with numeric buttons and an expression display. 
+
+    The program uses the Model-View-Controller (MVC) design pattern, where the evaluateExpression function acts as the model, handling expression evaluation.
+
+    The GUI is created in the view.py file, and the Controller links the model and view components. When executed, the application launches a functional calculator interface, 
+    allowing users to input mathematical expressions and obtain results through the GUI.
+
+Controller.py:
+
+    This code defines a Controller class for a calculator application. 
+
+    It connects user interactions in the GUI (such as button clicks) to corresponding actions: building mathematical expressions and evaluating them.
+
+    The Controller handles expression construction, error handling, and result calculation.
+
+    It utilizes the functools module to create partial functions, enabling the connection between button clicks and building expressions. 
+
+    The Controller class establishes a bridge between the GUI (View) and the evaluation logic (Model), ensuring seamless communication and functionality within the calculator application.
+
+test.py:
+
+    This code creates a simple PyQt5 application with a graphical window. The application initializes a GUI window with the title "PyQt5 App" and dimensions 280x80 pixels. 
+    
+    Inside the window, a QLabel widget displaying the text "This is Test" is positioned at coordinates (60, 30). 
+    
+    When executed, the application displays this window, allowing users to view the label text. 
+    
+    The app.exec_() function runs the application event loop, enabling user interaction, and sys.exit() ensures the application exits properly when the window is closed.
+
+view.py:
+
+    This code defines a graphical user interface (GUI) for a basic calculator application using PyQt5. 
+    
+    The GUI features a light blue color theme and consists of numeric buttons, arithmetic operators, and a display area. 
+    
+    The calculator supports standard operations such as addition, subtraction, multiplication, division, as well as parentheses. 
+    
+    The button sizes and font have been adjusted for better readability and aesthetics. 
+    
+    The GUI is structured using a QMainWindow and contains methods to set and retrieve display text, as well as clear the display for user input.
+
+model.py:
+
+    This code defines a function evaluateExpression(expression) that evaluates a mathematical expression passed as a string. 
+
+    It uses the eval() function to compute the result. 
+
+    If the evaluation is successful, it returns the result as a string. 
+
+    If an exception occurs during evaluation (such as division by zero or invalid syntax), it sets the result to the predefined string 'ERROR_MSG'. 
+
+    This function acts as the core logic for evaluating mathematical expressions, handling errors gracefully and preventing the application from crashing due to invalid inputs.
